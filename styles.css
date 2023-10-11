@@ -1,0 +1,63 @@
+/* Center the canvas container and make it responsive */
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust this value to control the maximum height */
+}
+
+/* Style the canvas to fit the container */
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set a font */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the control section */
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Style the buttons */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

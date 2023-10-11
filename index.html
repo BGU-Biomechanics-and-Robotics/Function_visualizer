@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angle Measurement Tool</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Angle Measurement Tool</h1>
+    </header>
+    <main>
+        <section id="controls">
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="uploadImage()">Upload Image</button>
+            <button onclick="clearCanvas()">Clear</button>
+        </section>
+
+        <section id="canvas-container">
+            <canvas id="canvas"></canvas>
+        </section>
+
+
+
+        <section id="angle-calculator">
+            <h2>Angle Calculator</h2>
+            <label for="point1X">Point 1 X (Normalized):</label>
+            <input type="number" id="point1X" step="0.01">
+            <label for="point1Y">Point 1 Y (Normalized):</label>
+            <input type="number" id="point1Y" step="0.01">
+            <label for="point2X">Point 2 X (Normalized):</label>
+            <input type="number" id="point2X" step="0.01">
+            <label for="point2Y">Point 2 Y (Normalized):</label>
+            <input type="number" id="point2Y" step="0.01">
+            <button onclick="calculateNormalizedAngle()">Calculate Angle</button>
+            <div id="normalized-angle-result"></div>
+
+            <!-- ... (existing calculator input fields for normalized coordinates) ... -->
+            <label for="x1">Point 1 X (Non-Normalized):</label>
+            <input type="number" id="x1">
+            <label for="y1">Point 1 Y (Non-Normalized):</label>
+            <input type="number" id="y1">
+            <label for="x2">Point 2 X (Non-Normalized):</label>
+            <input type="number" id="x2">
+            <label for="y2">Point 2 Y (Non-Normalized):</label>
+            <input type="number" id="y2">
+            <button onclick="calculateCoordinates()">Calculate Angle</button>
+            <div id="non-normalized-points-display"></div>
+            <div id="non-normalized-angle-result"></div>
+        </section>
+
+
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
